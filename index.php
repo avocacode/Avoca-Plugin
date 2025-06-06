@@ -166,3 +166,15 @@ function avoca_dashboard_widget_content()
     echo '</ul>';
     echo '<p>Butuh custom plugin atau tema? Kami bisa membantu!</p>';
 }
+
+// Disable XML-RPC (prevent brute force attacks)
+add_filter('xmlrpc_enabled', '__return_false');
+
+// Disable directory listing
+if (!defined('FS_CHMOD_DIR')) {
+    define('FS_CHMOD_DIR', (0755 & ~umask()));
+}
+
+// Remove WordPress version number from head and RSS
+remove_action('wp_head', 'wp_generator');
+add_filter('the_generator', '__return_empty_string');
