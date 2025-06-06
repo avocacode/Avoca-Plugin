@@ -51,7 +51,7 @@ function avoca_custom_login_page()
             if (loginForm) {
                 var warningDiv = document.createElement('div');
                 warningDiv.className = 'avoca-warning';
-                warningDiv.innerHTML = '<strong>PERINGATAN:</strong> Hanya personel yang berwenang yang diizinkan mengakses sistem ini. Setiap upaya login tanpa otorisasi akan dilaporkan dan dapat dikenakan tindakan hukum.';
+                warningDiv.innerHTML = '<strong>PERINGATAN:</strong> Hanya pengguna yang berwenang yang diizinkan mengakses sistem ini. Setiap upaya login tanpa otorisasi akan dilaporkan dan dapat dikenakan tindakan hukum.';
                 loginForm.parentNode.insertBefore(warningDiv, loginForm);
             }
         });
@@ -109,7 +109,7 @@ function avoca_add_support_link($wp_admin_bar)
     $args = array(
         'id'    => 'avoca-support',
         'title' => 'Avoca Support',
-        'href'  => 'https://wa.me/6281234567890', // Ganti dengan nomor WA Anda
+        'href'  => 'https://wa.me/6285179987690',
         'meta'  => array(
             'class' => 'avoca-support',
             'target' => '_blank'
@@ -122,7 +122,7 @@ add_action('admin_bar_menu', 'avoca_add_support_link', 999);
 // 4. Tambahan Fitur: Footer Text Custom
 function avoca_admin_footer_text()
 {
-    echo 'Dikembangkan dengan ❤ oleh <a href="https://avocacode.com" target="_blank">Avoca Code</a>. Butuh bantuan? <a href="https://wa.me/6281234567890" target="_blank">Hubungi kami via WhatsApp</a>.';
+    echo 'Dikembangkan dengan ❤ oleh <a href="https://avocacode.id" target="_blank">Avoca Code</a>. Butuh bantuan? <a href="https://wa.me/6285179987690" target="_blank">Hubungi kami via WhatsApp</a>.';
 }
 add_filter('admin_footer_text', 'avoca_admin_footer_text');
 
@@ -158,9 +158,9 @@ function avoca_dashboard_widget_content()
     echo '<p>Halo! Kami dari Avoca Code siap membantu Anda.</p>';
     echo '<p><strong>Hubungi kami via:</strong></p>';
     echo '<ul>';
-    echo '<li>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></li>';
-    echo '<li>Email: <a href="mailto:support@avocacode.com">support@avocacode.com</a></li>';
-    echo '<li>Website: <a href="https://avocacode.com" target="_blank">avocacode.com</a></li>';
+    echo '<li>WhatsApp: <a href="https://wa.me/6285179987690" target="_blank">+62 812-3456-7890</a></li>';
+    echo '<li>Email: <a href="mailto:mail@avocacode.id">mail@avocacode.id</a></li>';
+    echo '<li>Website: <a href="https://avocacode.id" target="_blank">avocacode.id</a></li>';
     echo '</ul>';
     echo '<p>Butuh custom plugin atau tema? Kami bisa membantu!</p>';
 }
