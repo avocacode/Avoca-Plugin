@@ -158,7 +158,7 @@ function avoca_dashboard_widget_content()
     echo '<p>Halo! Kami dari Avoca Code siap membantu Anda.</p>';
     echo '<p><strong>Hubungi kami via:</strong></p>';
     echo '<ul>';
-    echo '<li>WhatsApp: <a href="https://wa.me/6285179987690" target="_blank">+62 812-3456-7890</a></li>';
+    echo '<li>WhatsApp: <a href="https://wa.me/6285179987690" target="_blank">+62 851-7998-7690</a></li>';
     echo '<li>Email: <a href="mailto:mail@avocacode.id">mail@avocacode.id</a></li>';
     echo '<li>Website: <a href="https://avocacode.id" target="_blank">avocacode.id</a></li>';
     echo '</ul>';
