@@ -38,7 +38,7 @@ function avoca_custom_login_page()
         .avoca-warning {
             background-color: #fff8e5;
             border-left: 4px solid #ff9800;
-            padding: 20px 25px;
+            padding: 20px 25px !important;
             margin: 0 0 25px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             font-size: 14px;
@@ -53,7 +53,7 @@ function avoca_custom_login_page()
             if (loginForm) {
                 var warningDiv = document.createElement('div');
                 warningDiv.className = 'avoca-warning';
-                warningDiv.innerHTML = '<strong style="padding-bottom: 5px; display: block;">WARNING:</strong> <div style="padding: 8px 0 12px 0;">Only authorized personnel are permitted to access this system. Any unauthorized login attempts will be reported and may be subject to legal action.</div>';
+                warningDiv.innerHTML = '<strong style="display: block;">WARNING:</strong> <div style="padding: 8px 0 12px 0;">Only authorized personnel are permitted to access this system. Any unauthorized login attempts will be reported and may be subject to legal action.</div>';
                 loginForm.parentNode.insertBefore(warningDiv, loginForm);
             }
         });
