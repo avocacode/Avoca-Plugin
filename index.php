@@ -38,10 +38,12 @@ function avoca_custom_login_page()
         .avoca-warning {
             background-color: #fff8e5;
             border-left: 4px solid #ff9800;
-            padding: 12px;
-            margin: 0 0 20px;
+            padding: 20px 25px;
+            margin: 0 0 25px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             font-size: 14px;
+            line-height: 1.5;
+            border-radius: 4px;
         }
     </style>
 
@@ -51,7 +53,7 @@ function avoca_custom_login_page()
             if (loginForm) {
                 var warningDiv = document.createElement('div');
                 warningDiv.className = 'avoca-warning';
-                warningDiv.innerHTML = '<strong>PERINGATAN:</strong> Hanya pengguna yang berwenang yang diizinkan mengakses sistem ini. Setiap upaya login tanpa otorisasi akan dilaporkan dan dapat dikenakan tindakan hukum.';
+                warningDiv.innerHTML = '<strong style="padding-bottom: 5px; display: block;">WARNING:</strong> <div style="padding: 8px 0 12px 0;">Only authorized personnel are permitted to access this system. Any unauthorized login attempts will be reported and may be subject to legal action.</div>';
                 loginForm.parentNode.insertBefore(warningDiv, loginForm);
             }
         });
